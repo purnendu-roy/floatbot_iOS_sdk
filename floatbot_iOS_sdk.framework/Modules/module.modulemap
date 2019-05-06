@@ -1,0 +1,11 @@
+framework module floatbot_iOS_sdk {
+  umbrella header "floatbot_iOS_sdk.h"
+
+  export *
+  module * { export * }
+}
+
+module floatbot_iOS_sdk.Swift {
+    header "floatbot_iOS_sdk-Swift.h"
+    requires objc
+}
