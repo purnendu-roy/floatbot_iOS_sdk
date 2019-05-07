@@ -101,7 +101,7 @@ else{
 ## Get in touch
 
 For any queries, email us.
-Email : [contact@floatbot.ai](contact@floatbot.ai)
+Email : contact@floatbot.ai
 
 ## Author
 
