@@ -37,25 +37,36 @@ use_frameworks!
 ```
 
 ## Required Methods
-#### FloatbotView.shared.setEncryptionKey(encryptionKeyStr: "YOUR_ENCRYPTION_KEY")
+```ruby
+ FloatbotView.shared.setEncryptionKey(encryptionKeyStr: "YOUR_ENCRYPTION_KEY")
+ ```
 
 ### To initialize floatbot user,
-#### FloatbotView.shared.fview(withFrame: CGRect(x:0,y: 0,width:UIScreen.main.bounds.size.width,height: UIScreen.main.bounds.size.height - 300),withViewContainer: self, withbot_id:"5cc00545e6293668180a5d12")
+```ruby
+FloatbotView.shared.fview(withFrame: CGRect(x:0,y: 0,width:UIScreen.main.bounds.size.width,height: UIScreen.main.bounds.size.height - 300),withViewContainer: self, withbot_id:"5cc00545e6293668180a5d12")
+```
 
 ## Other helper Methods
 ### To show hide header, use
-#### FloatbotView.shared.showHeader(isVisible: false)
+```ruby
+FloatbotView.shared.showHeader(isVisible: false)
+```
 
 ### To show user sessions, use
-##### FloatbotView.shared.showSessions()
+```ruby
+FloatbotView.shared.showSessions()
+```
 
 ### To Set Authentication token, use 
-#### FloatbotView.shared.setToken(tokenStr: "YOUR_AUTH_TOKEN")
-
+```ruby
+FloatbotView.shared.setToken(tokenStr: "YOUR_AUTH_TOKEN")
+```
 
 ### To send APNS token to floatbot server to receive push notification, add following method in your project's -[AppDelegate application:didFinishLaunchingWithOptions:]  method
 
-#### FloatbotView.shared.updateToken(pushTokenStr: "YOUR_PUSH_TOKEN")
+```ruby
+FloatbotView.shared.updateToken(pushTokenStr: "YOUR_PUSH_TOKEN")
+```
 
 #### Uploading your App’s SSL Push Certificate
 
@@ -76,7 +87,7 @@ Upload your development / production certificate in Settings page.
 To enable floatbot to send push notifications to the application, add this implementation of - application:didRegisterForRemoteNotificationsWithDeviceToken: in your AppDelegate file that captures the device token and sends it to floatbot server
 
 Add below snippet in -[AppDelegate application:didFinishLaunchingWithOptions:] method 
-
+```ruby
 if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
 UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
 [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
@@ -85,11 +96,12 @@ UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTy
 else{
 [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
 }
+```
 
 ## Get in touch
 
 For any queries, email us.
-Email : contact@floatbot.ai
+Email : [contact@floatbot.ai](contact@floatbot.ai)
 
 ## Author
 
